@@ -1,0 +1,17 @@
+<section class="bg-light py-5 ">
+    <div class="pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 mx-auto py-3" *ngFor="let exp of expansionModels">
+                    <material-expansionpanel class="expansion-panel" flat [expanded]="false" [showSaveCancel]="false" [name]="exp.linkTitle">
+                        <div class="row border-top pt-3">
+                            <div class="col-12">
+                                <p>{{exp.linkInfo}}</p>
+                            </div>
+                        </div>
+                    </material-expansionpanel>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

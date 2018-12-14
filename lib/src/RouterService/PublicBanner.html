@@ -1,0 +1,40 @@
+<section>
+    <div class="container-fluid">
+
+        <div class="row mt-3 pt-sm-5">
+            <div class="col-sm-6 mx-auto text-center font-weight-bold">
+                <h3>{{banner.title}}</h3>
+            </div>
+        </div>
+
+        <div class="row pb-sm-5">
+            <div class="col-sm-5 mx-auto text-center">
+                <p>{{banner.subtitle}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 mx-auto banner-img text-sm-center" [ngStyle]="banner.imageStyle">
+
+                <div class="row pt-5">
+                    <div class="col-sm-6 mx-sm-auto font-weight-bold">
+                        <h5>{{banner.insideTitle}}</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 mx-sm-auto">
+                        <p>{{banner.insideSubtitle}}</p>
+                    </div>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-sm-6  mx-sm-auto">
+                        <a href="{{banner.buttonLink}}" class="btn btn-primary">{{banner.buttonText}}</a>
+                    </div>
+                </div>
+
+            </div><!--bannerImage-->
+        </div>
+    </div>
+</section>

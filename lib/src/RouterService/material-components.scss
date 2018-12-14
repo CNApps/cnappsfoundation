@@ -1,0 +1,8 @@
+@import "../../../web/style_sass/theme";
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/material_expansionpanel/mixins';
+
+.expansion-panel{
+  @include expansionpanel-border-radius($btn-border-radius)
+
+}

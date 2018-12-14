@@ -1,0 +1,42 @@
+<section class="bg-black text-white py-5">
+    <div class="container-fluid pb-5">
+        <div class="row">
+            <div class="col-sm-9 mx-auto text-center">
+
+                <div class="row pt-5 mt-5 py-1 pb-5">
+                    <div class="col-12 mx-auto">
+                        <img src="{{showCase.logoPath}}" class="img-fluid" style="max-width: 30%" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 mx-auto">
+                        <h5>{{showCase.title}}</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 mx-auto">
+                        <p>{{showCase.subTitle}}</p>
+                    </div>
+                </div>
+
+                <div class="row" *ngIf="showCase.links != null">
+                    <div *ngFor="let link of showCase.links" class="col-sm-4 mx-auto py-5">
+                        <div class="row">
+                            <div class="col-12 mx-auto">
+                                <h3>{{link.buttonText}}</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 mx-auto">
+                                <a href="{{link.path}}" class="btn btn-sm btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,84 @@
+@import "variables";
+@import "scss/bootstrap";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+
+
+@font-face {
+  font-family: 'Prox';
+  src: url("../fonts/proxima.ttf");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bl';
+  src: url("../fonts/bold.otf");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/black.otf");
+}
+
+
+body {
+  margin: 0 auto;
+  color: #000000;
+}
+
+* {
+  font-family: "Prox", Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Proxima Nova Bl";
+}
+
+
+.footer-style{
+  background-color: $dark;
+  color: $white;
+}
+
+.header-brand-logo{
+  width: 2.1rem;
+}
+
+.banner-img{
+
+  background: no-repeat;
+  background-size: cover;
+  height: 24rem;
+}
+
+.bg-black{
+  background-color: $black;
+}
+
+.bg-grey{
+  background-color: #2A2A2A;
+}
+
+.phone-bg{
+  background-color: #151515;
+}
+
+@include media-breakpoint-up(sm){
+  .banner-img{
+    height: 36rem;
+    background-position-y: center;
+    background-position: 0% 66%;
+  }
+}
+
+@include media-breakpoint-up(md){
+
+}
+
+@include media-breakpoint-up(lg){
+
+}
+
+@include media-breakpoint-up(xl){
+
+}

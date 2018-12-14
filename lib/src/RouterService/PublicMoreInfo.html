@@ -1,0 +1,25 @@
+<section class="bg-light py-sm-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9 mx-auto">
+                <div class="row">
+
+                    <div *ngFor="let info of moreInfo" class="col-sm-4 text-center p-sm-3 py-3 mx-auto">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="{{info.image}}" class="img-fluid pb-3 pb-sm-5" style="max-width: 45%">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 *ngIf="info.title != null">{{info.title}}</h3>
+                                <p *ngIf="info.content != null">{{info.content}} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

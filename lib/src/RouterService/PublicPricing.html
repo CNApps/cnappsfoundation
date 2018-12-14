@@ -1,0 +1,28 @@
+<section class="bg-grey text-white py-5">
+    <div class="container-fluid  text-center py-3">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="row">
+
+                    <div class="col-sm-6 mx-auto">
+                        <h4 *ngIf="pricing.title != null">{{pricing.title}}</h4>
+                    </div>
+
+                </div>
+
+                <div class="row py-5" *ngIf="pricing.packages != null">
+                    <div class="col-sm-3 mx-auto" *ngFor="let package of pricing.packages">
+                        <div class="row py-3">
+                            <div class="col">
+                                <img *ngIf="package.image != null" src="{{package.image}}" class="img-fluid" style="max-width: 24%" alt="">
+                            </div>
+                        </div>
+                        <h5 *ngIf="package.title != null">{{package.title}}</h5>
+                        <p *ngIf="package.subtitle != null">{{package.subtitle}}</p>
+                        <p *ngIf="package.price != null" class="text-light">{{package.price}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
